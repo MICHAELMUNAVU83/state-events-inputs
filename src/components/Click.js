@@ -26,7 +26,7 @@ function Click() {
       {/* // third way to write event listener */}
       <button
         onClick={() => {
-          console.log("this is third way to write event listener");
+          console.log("this is the third way");
         }}
       >
         Third way to add event listener

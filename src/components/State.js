@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 
-function Change() {
+function State() {
   const [count, setCount] = useState(0);
+  function subtract() {
+    setCount(count - 1);
+  }
   return (
     <div>
+      {count}
       <button
         onClick={() => {
           setCount(count + 1);
@@ -11,17 +15,9 @@ function Change() {
       >
         +
       </button>
-      <button
-        onClick={() => {
-          setCount(count - 1);
-        }}
-      >
-        -
-      </button>
-
-      {count}
+      <button onClick={subtract}>-</button>
     </div>
   );
 }
 
-export default Change;
+export default State;
